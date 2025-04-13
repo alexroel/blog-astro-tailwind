@@ -1,29 +1,37 @@
-# Astro Starter Kit: Blog
+# Blog con Astro y TailwindCSS
 
-```sh
-npm create astro@latest -- --template blog
-```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+## 🚀 Creación del Proyecto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+El proyecto fue creado utilizando Astro con el template de blog y TailwindCSS. A continuación, se detallan los pasos seguidos:
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+1. **Inicialización del proyecto**  
+   Ejecuta el siguiente comando para crear un nuevo proyecto con Astro utilizando el template de blog:
+    ```sh
+    npm create astro@latest
+    ```
 
-Features:
+2. **Configuración inicial**  
+   Durante la configuración, se seleccionaron las siguientes opciones:
+   - Directorio del proyecto: `./astro-blog-tailwind`
+   - Template: Blog
+   - Instalar dependencias: Sí
+   - Inicializar un repositorio Git: Sí
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+3. **Inicio del servidor de desarrollo**  
+   Una vez creado el proyecto, navega al directorio del proyecto y ejecuta el servidor de desarrollo:
+   ```sh
+   cd ./astro-blog-tailwind
+   npm run dev
+   ```
 
-## 🚀 Project Structure
+   Esto iniciará el servidor en `http://localhost:4321/`.
 
-Inside of your Astro project, you'll see the following folders and files:
+   Sigue las instrucciones proporcionadas por Astro para completar la configuración.
+
+### 🚀 Estructura del Proyecto
+
+Dentro de tu proyecto de Astro, verás las siguientes carpetas y archivos:
 
 ```text
 ├── public/
@@ -38,31 +46,28 @@ Inside of your Astro project, you'll see the following folders and files:
 └── tsconfig.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Astro busca archivos `.astro` o `.md` en el directorio `src/pages/`. Cada archivo se expone como una ruta basada en su nombre.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+No hay nada especial sobre `src/components/`, pero ahí es donde solemos colocar componentes de Astro/React/Vue/Svelte/Preact.
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+El directorio `src/content/` contiene "colecciones" de documentos relacionados en Markdown y MDX. Usa `getCollection()` para recuperar publicaciones de `src/content/blog/` y verifica el frontmatter usando un esquema opcional. Consulta la [documentación de colecciones de contenido de Astro](https://docs.astro.build/en/guides/content-collections/) para aprender más.
 
-Any static assets, like images, can be placed in the `public/` directory.
+Cualquier recurso estático, como imágenes, puede colocarse en el directorio `public/`.
 
-## 🧞 Commands
+### 🧞 Comandos
 
-All commands are run from the root of the project, from a terminal:
+Todos los comandos se ejecutan desde la raíz del proyecto, en una terminal:
 
-| Command                   | Action                                           |
+| Comando                   | Acción                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm install`             | Instala las dependencias                         |
+| `npm run dev`             | Inicia el servidor de desarrollo local en `localhost:4321` |
+| `npm run build`           | Construye tu sitio de producción en `./dist/`    |
+| `npm run preview`         | Previsualiza tu sitio construido localmente antes de desplegarlo |
+| `npm run astro ...`       | Ejecuta comandos CLI como `astro add`, `astro check` |
+| `npm run astro -- --help` | Obtén ayuda sobre el CLI de Astro                |
 
-## 👀 Want to learn more?
+---
+## Instalar TailwindCSS
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
